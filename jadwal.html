@@ -13,147 +13,148 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white overflow-x-hidden">
+<body class="bg-white">
 
-  <div class="relative z-[-1]">
-    <div class="absolute top-[-300px] right-[-400px] md:top-[-50px] md:right-[-120px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
-    <div class="absolute top-[-350px] right-[-400px] md:top-[-150px] md:right-[-140px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
+  <div class="relative overflow-x-hidden">
+
+    <div class="absolute z-[-1] top-[-400px] right-[-450px] md:top-[-100px] md:right-[-100px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
+    <div class="absolute z-[-2] top-[-350px] right-[-450px] md:top-[80px] md:right-[-180px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
+
+    <nav class="container mx-auto pt-5 px-4 py-2">
+      <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
+        <div class="flex flex-wrap items-center justify-between gap-10">
+          <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
+          <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar">
+            <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 mt-3 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
+              <li>
+                <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
+              </li>
+              <li>
+                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
+              </li>
+              <li>
+                <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
+              </li>
+              <li>
+                <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
+              </li>
+              <li>
+                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
+      </div>
+    </nav>
+
+    <section role="check" class="py-10">
+      <div class="container mx-auto px-4">
+        <div class="text-center space-y-2 my-4">
+          <h3 class="font-bold text-3xl"><span class="text-sky-600">Cek Wilayah</span> Bantuan Sosial Disini!</h3>
+          <p class="text-base text-gray-700">Berikut adalah daftar wilayah penerima Bantuan Sosial:</p>
+        </div>
+        <div class="mt-7 flex flex-wrap md:flex-nowrap items-center justify-center gap-5">
+
+          <div class="w-full bg-white text-center text-sm px-4 py-4 rounded-xl border transition ease-in-out md:hover:scale-105 space-y-2">
+            <div class="flex flex-col md:flex-row gap-3">
+              <select id="provinces" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
+                <option>Pilih Provinsi</option>
+              </select>
+              <select id="regencies" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
+                <option>Pilih Kota / Kabupaten</option>
+              </select>
+              <select id="districts" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
+                <option>Pilih Kecamatan</option>
+              </select>
+              <select id="villages" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
+                <option>Pilih Desa / Kelurahan</option>
+              </select>
+              <button onclick="cariWilayah()" class="flex-1 md:flex-2 bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-lg"><i class="fa-solid fa-magnifying-glass"></i> Cek sekarang!</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section role="jadwal" class="bg-white py-10">
+      <div class="container mx-auto px-4 text-center">
+        <div class="relative overflow-x-auto">
+          <table class="w-full text-sm text-left text-gray-600">
+            <thead class="text-gray-800 uppercase bg-gray-50">
+              <tr>
+                <th class="px-6 py-3 rounded-tl-lg">No</th>
+                <th class="px-6 py-3">Tanggal</th>
+                <th class="px-6 py-3">Provinsi</th>
+                <th class="px-6 py-3">Kota / Kabupaten</th>
+                <th class="px-6 py-3">Kecamatan</th>
+                <th class="px-6 py-3">Desa / Kelurahan</th>
+                <th class="px-6 py-3 rounded-rl-lg">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="result"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section role="manfaat" class="bg-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center space-y-2">
+          <h3 class="font-bold text-3xl">Daftar Manfaat Untuk<br><span class="text-sky-600">Bantuan Sosial</span></h3>
+          <p class="text-base text-gray-700">Berikut adalah daftar manfaat yang diterima dari Bantuan Sosial:</p>
+        </div>
+        <div class="mt-10 flex flex-col md:flex-row justify-center gap-5">
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-bowl-rice fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Beras</h4>
+            <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-money-bill fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Uang Tunai</h4>
+            <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Telur & Mie Instan</h4>
+            <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section role="video" class="bg-gray-50 py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-10">
+          <div class="flex-1">
+            <iframe class="w-full h-80 rounded-xl" src="https://www.youtube.com/embed/Fvu-D6OGSm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="flex-1 space-y-3">
+            <h3 class="font-bold text-3xl">Cara <span class="text-sky-600">Pengambilan BANSOS</span></h3>
+            <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iure consequuntur dicta minus eum, excepturi veniam et veritatis, aperiam eos doloremque maiores debitis obcaecati adipisci quod nobis tenetur. Nisi reiciendis esse nulla non! Praesentium dicta, iure magni, adipisci corrupti mollitia iste laborum quae natus reprehenderit voluptatem repellendus voluptatum sunt quos, temporibus at voluptatibus fugiat vitae eveniet vel totam aliquam neque! Ab, placeat dicta eos nostrum nihil ut tempore quasi eum dolor similique et reprehenderit delectus deleniti repellat numquam voluptatibus dolore? Nulla quo sint, ullam harum quibusdam quas, earum, alias culpa nostrum corrupti numquam autem reprehenderit ut eligendi! Omnis, porro non!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3 bg-gray-800 text-white text-center">
+      <div class="container mx-auto px-4">
+        <p class="text-xs">© 2023 Materi kuliah Front End Development by <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a> | Politeknik LP3I Kampus Tasikmalaya</p>
+      </div>
+    </footer>
   </div>
-
-  <nav class="container mx-auto pt-5 px-4 py-2">
-    <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
-      <div class="flex flex-wrap items-center justify-between gap-10">
-        <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
-        <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar">
-          <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 mt-3 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
-            <li>
-              <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
-            </li>
-            <li>
-              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
-            </li>
-            <li>
-              <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
-            </li>
-            <li>
-              <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
-            </li>
-            <li>
-              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
-    </div>
-  </nav>
-
-  <section role="check" class="py-10">
-    <div class="container mx-auto px-4">
-      <div class="text-center space-y-2 my-4">
-        <h3 class="font-bold text-3xl"><span class="text-sky-600">Cek Wilayah</span> Bantuan Sosial Disini!</h3>
-        <p class="text-base text-gray-700">Berikut adalah daftar wilayah penerima Bantuan Sosial:</p>
-      </div>
-      <div class="mt-7 flex flex-wrap md:flex-nowrap items-center justify-center gap-5">
-
-        <div class="w-full bg-white text-center text-sm px-4 py-4 rounded-xl border transition ease-in-out md:hover:scale-105 space-y-2">
-          <div class="flex flex-col md:flex-row gap-3">
-            <select id="provinces" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
-              <option>Pilih Provinsi</option>
-            </select>
-            <select id="regencies" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
-              <option>Pilih Kota / Kabupaten</option>
-            </select>
-            <select id="districts" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
-              <option>Pilih Kecamatan</option>
-            </select>
-            <select id="villages" class="flex-1 py-2 px-4 border border-gray-200 text-gray-800 rounded-lg text-sm">
-              <option>Pilih Desa / Kelurahan</option>
-            </select>
-            <button onclick="cariWilayah()" class="flex-1 md:flex-2 bg-sky-500 hover:bg-sky-600 text-white px-5 py-2 rounded-lg"><i class="fa-solid fa-magnifying-glass"></i> Cek sekarang!</button>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section role="jadwal" class="bg-white py-10">
-    <div class="container mx-auto px-4 text-center">
-      <div class="relative overflow-x-auto">
-        <table class="w-full text-sm text-left text-gray-600">
-          <thead class="text-gray-800 uppercase bg-gray-50">
-            <tr>
-              <th class="px-6 py-3 rounded-tl-lg">No</th>
-              <th class="px-6 py-3">Tanggal</th>
-              <th class="px-6 py-3">Provinsi</th>
-              <th class="px-6 py-3">Kota / Kabupaten</th>
-              <th class="px-6 py-3">Kecamatan</th>
-              <th class="px-6 py-3">Desa / Kelurahan</th>
-              <th class="px-6 py-3 rounded-rl-lg">Aksi</th>
-            </tr>
-          </thead>
-          <tbody id="result"></tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section role="manfaat" class="bg-white py-20">
-    <div class="container mx-auto px-4">
-      <div class="text-center space-y-2">
-        <h3 class="font-bold text-3xl">Daftar Manfaat Untuk<br><span class="text-sky-600">Bantuan Sosial</span></h3>
-        <p class="text-base text-gray-700">Berikut adalah daftar manfaat yang diterima dari Bantuan Sosial:</p>
-      </div>
-      <div class="mt-10 flex flex-col md:flex-row justify-center gap-5">
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-bowl-rice fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Beras</h4>
-          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-money-bill fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Uang Tunai</h4>
-          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Telur & Mie Instan</h4>
-          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section role="video" class="bg-gray-50 py-10">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between md:items-center gap-10">
-        <div class="flex-1">
-          <iframe class="w-full h-80 rounded-xl" src="https://www.youtube.com/embed/Fvu-D6OGSm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="flex-1 space-y-3">
-          <h3 class="font-bold text-3xl">Cara <span class="text-sky-600">Pengambilan BANSOS</span></h3>
-          <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iure consequuntur dicta minus eum, excepturi veniam et veritatis, aperiam eos doloremque maiores debitis obcaecati adipisci quod nobis tenetur. Nisi reiciendis esse nulla non! Praesentium dicta, iure magni, adipisci corrupti mollitia iste laborum quae natus reprehenderit voluptatem repellendus voluptatum sunt quos, temporibus at voluptatibus fugiat vitae eveniet vel totam aliquam neque! Ab, placeat dicta eos nostrum nihil ut tempore quasi eum dolor similique et reprehenderit delectus deleniti repellat numquam voluptatibus dolore? Nulla quo sint, ullam harum quibusdam quas, earum, alias culpa nostrum corrupti numquam autem reprehenderit ut eligendi! Omnis, porro non!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="py-3 bg-gray-800 text-white text-center">
-    <div class="container mx-auto px-4">
-      <p class="text-xs">© 2023 Materi kuliah Front End Development by <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a> | Politeknik LP3I Kampus Tasikmalaya</p>
-    </div>
-  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="./js/owl.carousel.min.js"></script>

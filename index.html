@@ -13,214 +13,215 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white overflow-x-hidden">
+<body class="bg-white">
 
-  <div class="relative z-[-1]">
-    <div class="absolute top-[-300px] right-[-400px] md:top-[-50px] md:right-[-120px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
-    <div class="absolute top-[-350px] right-[-400px] md:top-[-150px] md:right-[-140px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
-  </div>
+  <div class="relative overflow-x-hidden">
 
-  <nav class="container mx-auto pt-5 px-4 py-2">
-    <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
+    <div class="absolute z-[-1] top-[-400px] right-[-450px] md:top-[-100px] md:right-[-100px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
+    <div class="absolute z-[-2] top-[-350px] right-[-450px] md:top-[80px] md:right-[-180px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
 
-      <div class="flex flex-wrap items-center justify-between gap-10">
-        <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
-        <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar">
-          <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 mt-3 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
-            <li>
-              <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
-            </li>
-            <li>
-              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
-            </li>
-            <li>
-              <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
-            </li>
-            <li>
-              <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
-            </li>
-            <li>
-              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
-    </div>
-  </nav>
+    <nav class="container mx-auto pt-5 px-4 py-2">
+      <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
 
-  <header class="container mx-auto px-4 py-10">
-    <div class="flex flex-col md:flex-row items-center gap-5">
-      <div class="w-full md:w-3/5 space-y-5">
-        <h1 class="text-6xl font-bold text-gray-800">Kementerian<br>Sosial <span class="text-sky-600">Republik<br>Indonesia</span></h1>
-        <p class="text-xl font-light text-gray-600">Sebuah lembaga pemerintah di Indonesia yang bertanggung jawab<br>atas urusan sosial dan kesejahteraan rakyat.</p>
-        <div class="w-4/5 flex flex-row flex-wrap">
-          <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
-            <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
-            <p class="text-sm"><span class="font-bold">Humanis</span><br>Selalu menggunakan pendekatan humanis ketika bekerja.</p>
-          </div>
-          <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
-            <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
-            <p class="text-sm"><span class="font-bold">Adaptif</span><br>Program kerja dirancang agar mudah beradaptasi di segala kondisi.</p>
-          </div>
-          <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
-            <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
-            <p class="text-sm"><span class="font-bold">Dedikatif</span><br>SDM Kemensos senantiasa bekerja penuh dedikasi, tidak sekedar business as usual.</p>
-          </div>
-          <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
-            <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
-            <p class="text-sm"><span class="font-bold">Inklusif</span><br>Dalam bekerja selalu dalam konsep melibatkan semua stakeholders.</p>
-          </div>
-          <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
-            <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
-            <p class="text-sm"><span class="font-bold">Responsif</span><br>Seluruh Program dan SDM dalam bekerja harus memiliki sense of urgency yang tinggi berupaya untuk bisa responsif.</p>
+        <div class="flex flex-wrap items-center justify-between gap-10">
+          <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
+          <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar">
+            <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
+              <li>
+                <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
+              </li>
+              <li>
+                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
+              </li>
+              <li>
+                <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
+              </li>
+              <li>
+                <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
+              </li>
+              <li>
+                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
+              </li>
+            </ul>
           </div>
         </div>
+        <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
       </div>
-      <div class="w-full md:w-2/5 bg-white shadow-xl md:border-none border border-gray-100 rounded-xl p-5 text-center transition ease-in-out md:hover:scale-105">
-        <h4 class="font-bold text-gray-800 mb-3">Cek Status Bantuan Sosial Disini!</h4>
+    </nav>
 
-        <div class="my-4" id="result"></div>
-
-        <div class="flex flex-col items-center gap-3">
-          <label class="text-gray-600 text-sm">Nomor Induk Kependudukan</label>
-          <input id="nik" type="text" class="w-full md:w-3/4 py-2 px-4 bg-gray-50 border border-gray-200 text-gray-800 rounded-lg text-sm" placeholder="Isi nomor induk kependudukan disini...">
-          <button onclick="cariPenerima()" class="w-full md:w-3/4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm px-5 py-2 rounded-lg"><i class="fa-solid fa-magnifying-glass"></i> Cari sekarang!</button>
-          <div class="w-3/4 flex justify-center gap-2 text-xs text-gray-500 mt-2">
-            <div>
-              <i class="fa-solid fa-certificate"></i>
+    <header class="container mx-auto px-4 py-10">
+      <div class="flex flex-col md:flex-row items-center gap-5">
+        <div class="w-full md:w-3/5 space-y-5">
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-800">Kementerian<br>Sosial <span class="text-sky-600">Republik<br>Indonesia</span></h1>
+          <p class="text-base md:text-xl font-light text-gray-600">Sebuah lembaga pemerintah di Indonesia yang bertanggung jawab atas urusan sosial dan kesejahteraan rakyat.</p>
+          <div class="w-4/5 flex flex-row flex-wrap">
+            <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
+              <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <p class="text-sm"><span class="font-bold">Humanis</span><br>Selalu menggunakan pendekatan humanis ketika bekerja.</p>
             </div>
-            <p class="text-left">Website ini hanya digunakan untuk praktek mata kuliah Front End Development di Politeknik LP3I Kampus Tasikmalaya tahun 2023. Oleh <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a></p>
+            <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
+              <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <p class="text-sm"><span class="font-bold">Adaptif</span><br>Program kerja dirancang agar mudah beradaptasi di segala kondisi.</p>
+            </div>
+            <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
+              <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <p class="text-sm"><span class="font-bold">Dedikatif</span><br>SDM Kemensos senantiasa bekerja penuh dedikasi, tidak sekedar business as usual.</p>
+            </div>
+            <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
+              <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <p class="text-sm"><span class="font-bold">Inklusif</span><br>Dalam bekerja selalu dalam konsep melibatkan semua stakeholders.</p>
+            </div>
+            <div class="w-1/2 flex gap-2 text-gray-700 mb-3 px-1">
+              <span class="text-emerald-700"><i class="fa-solid fa-check"></i></span>
+              <p class="text-sm"><span class="font-bold">Responsif</span><br>Seluruh Program dan SDM dalam bekerja harus memiliki sense of urgency yang tinggi berupaya untuk bisa responsif.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
+        <div class="w-full md:w-2/5 bg-white shadow-xl md:border-none border border-gray-100 rounded-xl p-5 text-center transition ease-in-out md:hover:scale-105">
+          <h4 class="font-bold text-gray-800 mb-3">Cek Status Bantuan Sosial Disini!</h4>
 
-  <section role="banner" class="bg-gray-50 py-10">
-    <div class="container mx-auto px-4">
-      <div class="owl-carousel owl-theme">
-        <div class="item">
-          <img src="https://kemensos.go.id/uploads/banners/16632269321948.jpg" class="rounded-2xl">
-        </div>
-        <div class="item">
-          <img src="https://kemensos.go.id/uploads/banners/16722903031406.png" class="rounded-2xl">
-        </div>
-      </div>
-    </div>
-  </section>
+          <div class="my-4" id="result"></div>
 
-  <section role="tugas" class="bg-white py-20">
-    <div class="container mx-auto px-4">
-      <div class="text-center space-y-2">
-        <h3 class="font-bold text-3xl">Tugas Dan Fungsi<br><span class="text-sky-600">Kementerian Sosial</span></h3>
-        <p class="text-base text-gray-700">Beberapa tugas dan fungsi dari Kementerian Sosial antara lain:</p>
-      </div>
-      <div class="mt-10 flex flex-wrap flex-col md:flex-row justify-center">
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-bowl-rice fa-2x"></i>
+          <div class="flex flex-col items-center gap-3">
+            <label class="text-gray-600 text-sm">Nomor Induk Kependudukan</label>
+            <input id="nik" type="text" class="w-full md:w-3/4 py-2 px-4 bg-gray-50 border border-gray-200 text-gray-800 rounded-lg text-sm" placeholder="Isi nomor induk kependudukan disini...">
+            <button onclick="cariPenerima()" class="w-full md:w-3/4 bg-emerald-500 hover:bg-emerald-600 text-white text-sm px-5 py-2 rounded-lg"><i class="fa-solid fa-magnifying-glass"></i> Cari sekarang!</button>
+            <div class="w-full md:w-3/4 flex justify-center gap-2 text-xs text-gray-500 mt-2">
+              <div>
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <p class="text-left">Website ini hanya digunakan untuk praktek mata kuliah Front End Development di Politeknik LP3I Kampus Tasikmalaya tahun 2023. Oleh <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a></p>
+            </div>
           </div>
-          <h4 class="font-bold mt-2 text-xl">Menetapkan & Melaksanakan</h4>
-          <p class="text-sm text-gray-600 mt-1">Menetapkan dan melaksanakan kebijakan nasional di bidang sosial dan kesejahteraan masyarakat</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-money-bill fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Menyusun & Mengkoordinasikan</h4>
-          <p class="text-sm text-gray-600 mt-1">Menyusun dan mengkoordinasikan program-program sosial dan kesejahteraan masyarakat.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Mengelola</h4>
-          <p class="text-sm text-gray-600 mt-1">Mengelola dana sosial dan kesejahteraan masyarakat seperti zakat, wakaf, dan amil.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Menyediakan Layanan</h4>
-          <p class="text-sm text-gray-600 mt-1">Menyediakan layanan dan fasilitas bagi masyarakat yang membutuhkan, seperti panti sosial, panti rehabilitasi, dan fasilitas sosial lainnya.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Melakukan Penanggulangan</h4>
-          <p class="text-sm text-gray-600 mt-1">Melakukan penanggulangan bencana sosial dan kemanusiaan.</p>
-        </div>
-        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
-          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
-            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
-          </div>
-          <h4 class="font-bold mt-2 text-xl">Mengembangkan Kemitraan</h4>
-          <p class="text-sm text-gray-600 mt-1">Mengembangkan kemitraan dengan organisasi masyarakat dan lembaga sosial lainnya untuk meningkatkan kesejahteraan masyarakat.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section role="video" class="bg-gray-50 py-10">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row justify-between md:items-center gap-10">
-        <div class="flex-1">
-          <iframe class="w-full h-80 rounded-xl" src="https://www.youtube.com/embed/Fvu-D6OGSm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-        <div class="flex-1 space-y-3">
-          <h3 class="font-bold text-3xl">Sambutan <span class="text-sky-600">Presiden RI ke-7</span></h3>
-          <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iure consequuntur dicta minus eum, excepturi veniam et veritatis, aperiam eos doloremque maiores debitis obcaecati adipisci quod nobis tenetur. Nisi reiciendis esse nulla non! Praesentium dicta, iure magni, adipisci corrupti mollitia iste laborum quae natus reprehenderit voluptatem repellendus voluptatum sunt quos, temporibus at voluptatibus fugiat vitae eveniet vel totam aliquam neque! Ab, placeat dicta eos nostrum nihil ut tempore quasi eum dolor similique et reprehenderit delectus deleniti repellat numquam voluptatibus dolore? Nulla quo sint, ullam harum quibusdam quas, earum, alias culpa nostrum corrupti numquam autem reprehenderit ut eligendi! Omnis, porro non!</p>
+    <section role="banner" class="bg-gray-50 py-10">
+      <div class="container mx-auto px-4">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="https://kemensos.go.id/uploads/banners/16632269321948.jpg" class="rounded-2xl">
+          </div>
+          <div class="item">
+            <img src="https://kemensos.go.id/uploads/banners/16722903031406.png" class="rounded-2xl">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section role="berita" class="bg-white py-8">
-    <div class="container mx-auto px-4 text-center">
-      <div class="mb-7">
-        <h1 class="font-bold text-3xl">Berita <span class="text-sky-600">Terkini</span></h1>
-        <p class="text-gray-600 mt-2">Beberapa berita dari Kementerian Sosial antara lain:</p>
+    <section role="tugas" class="bg-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center space-y-2">
+          <h3 class="font-bold text-3xl">Tugas Dan Fungsi<br><span class="text-sky-600">Kementerian Sosial</span></h3>
+          <p class="text-base text-gray-700">Beberapa tugas dan fungsi dari Kementerian Sosial antara lain:</p>
+        </div>
+        <div class="mt-10 flex flex-wrap flex-col md:flex-row justify-center">
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-bowl-rice fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Menetapkan & Melaksanakan</h4>
+            <p class="text-sm text-gray-600 mt-1">Menetapkan dan melaksanakan kebijakan nasional di bidang sosial dan kesejahteraan masyarakat</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-money-bill fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Menyusun & Mengkoordinasikan</h4>
+            <p class="text-sm text-gray-600 mt-1">Menyusun dan mengkoordinasikan program-program sosial dan kesejahteraan masyarakat.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Mengelola</h4>
+            <p class="text-sm text-gray-600 mt-1">Mengelola dana sosial dan kesejahteraan masyarakat seperti zakat, wakaf, dan amil.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Menyediakan Layanan</h4>
+            <p class="text-sm text-gray-600 mt-1">Menyediakan layanan dan fasilitas bagi masyarakat yang membutuhkan, seperti panti sosial, panti rehabilitasi, dan fasilitas sosial lainnya.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Melakukan Penanggulangan</h4>
+            <p class="text-sm text-gray-600 mt-1">Melakukan penanggulangan bencana sosial dan kemanusiaan.</p>
+          </div>
+          <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center p-5 mb-5">
+            <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+              <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+            </div>
+            <h4 class="font-bold mt-2 text-xl">Mengembangkan Kemitraan</h4>
+            <p class="text-sm text-gray-600 mt-1">Mengembangkan kemitraan dengan organisasi masyarakat dan lembaga sosial lainnya untuk meningkatkan kesejahteraan masyarakat.</p>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-col md:flex-row items-center justify-center gap-5">
-        <div>
-          <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
-          <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
-            <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
-            <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
-            <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div>
-          <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
-          <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
-            <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
-            <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
-            <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div>
-          <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
-          <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
-            <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
-            <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
-            <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="inline-block mt-7 text-center px-4 py-2 rounded text-white text-sm bg-sky-600 hover:bg-sky-700">Lihat lainnya</a>
-    </div>
-  </section>
+    </section>
 
-  <footer class="py-3 bg-gray-800 text-white text-center">
-    <div class="container mx-auto px-4">
-      <p class="text-xs">© 2023 Materi kuliah Front End Development by <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a> | Politeknik LP3I Kampus Tasikmalaya</p>
-    </div>
-  </footer>
+    <section role="video" class="bg-gray-50 py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-10">
+          <div class="flex-1">
+            <iframe class="w-full h-80 rounded-xl" src="https://www.youtube.com/embed/Fvu-D6OGSm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="flex-1 space-y-3">
+            <h3 class="font-bold text-3xl">Sambutan <span class="text-sky-600">Presiden RI ke-7</span></h3>
+            <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iure consequuntur dicta minus eum, excepturi veniam et veritatis, aperiam eos doloremque maiores debitis obcaecati adipisci quod nobis tenetur. Nisi reiciendis esse nulla non! Praesentium dicta, iure magni, adipisci corrupti mollitia iste laborum quae natus reprehenderit voluptatem repellendus voluptatum sunt quos, temporibus at voluptatibus fugiat vitae eveniet vel totam aliquam neque! Ab, placeat dicta eos nostrum nihil ut tempore quasi eum dolor similique et reprehenderit delectus deleniti repellat numquam voluptatibus dolore? Nulla quo sint, ullam harum quibusdam quas, earum, alias culpa nostrum corrupti numquam autem reprehenderit ut eligendi! Omnis, porro non!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section role="berita" class="bg-white py-8">
+      <div class="container mx-auto px-4 text-center">
+        <div class="mb-7">
+          <h1 class="font-bold text-3xl">Berita <span class="text-sky-600">Terkini</span></h1>
+          <p class="text-gray-600 mt-2">Beberapa berita dari Kementerian Sosial antara lain:</p>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-5">
+          <div>
+            <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
+            <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
+              <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
+              <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
+              <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div>
+            <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
+            <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
+              <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
+              <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
+              <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div>
+            <img src="https://kemensos.go.id/uploads/topics/16762941272140.jpg" class="rounded-t-xl">
+            <div class="border border-gray-200  px-4 py-4 rounded-b-xl">
+              <h4 class="font-bold text-lg">Rapat Koordinasi Teknis Program ATENSI Sentra Wyata Guna Bandung</h4>
+              <p class="text-sm text-gray-700 my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse adipisci quae laboriosam, sit ipsa debitis reprehenderit ex placeat cumque, repellat, alias voluptas mollitia porro error delectus voluptatum distinctio facere consectetur labore corrupti tempora? Voluptatum aut ratione dignissimos delectus esse doloribus expedita non explicabo, sunt, ipsam distinctio quos unde similique voluptatem.</p>
+              <a href="#" class="inline-block text-sm text-sky-600 hover:text-sky-700">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="inline-block mt-7 text-center px-4 py-2 rounded text-white text-sm bg-sky-600 hover:bg-sky-700">Lihat lainnya</a>
+      </div>
+    </section>
+
+    <footer class="py-3 bg-gray-800 text-white text-center">
+      <div class="container mx-auto px-4">
+        <p class="text-xs">© 2023 Materi kuliah Front End Development by <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a> | Politeknik LP3I Kampus Tasikmalaya</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
