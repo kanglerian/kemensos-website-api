@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kementerian Sosial RI - Bantuan Sosial 2023</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white overflow-x-hidden">
+
+  <div class="relative z-[-1]">
+    <div class="absolute top-[-300px] right-[-400px] md:top-[-50px] md:right-[-120px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
+    <div class="absolute top-[-350px] right-[-400px] md:top-[-150px] md:right-[-140px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
+  </div>
+
+  <nav class="container mx-auto pt-5 px-4 py-2">
+    <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
+      <div class="flex flex-wrap items-center justify-between gap-10">
+        <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
+        <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar">
+          <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 mt-3 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
+            <li>
+              <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
+            </li>
+            <li>
+              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
+            </li>
+            <li>
+              <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
+            </li>
+            <li>
+              <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
+            </li>
+            <li>
+              <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
+    </div>
+  </nav>
+
+  <section role="infografis" class="py-10">
+    <div class="container mx-auto px-4">
+      <div class="text-center space-y-2 my-4">
+        <h3 class="font-bold text-3xl"><span class="text-sky-600">Info Grafis</span> Bantuan Sosial</h3>
+        <p class="text-base text-gray-700">Berikut adalah infografis wilayah penerima Bantuan Sosial:</p>
+      </div>
+      <div class="bg-white shadow-lg px-5 py-5 rounded-xl">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section role="manfaat" class="bg-white py-20">
+    <div class="container mx-auto px-4">
+      <div class="text-center space-y-2">
+        <h3 class="font-bold text-3xl">Daftar Manfaat Untuk<br><span class="text-sky-600">Bantuan Sosial</span></h3>
+        <p class="text-base text-gray-700">Berikut adalah daftar manfaat yang diterima dari Bantuan Sosial:</p>
+      </div>
+      <div class="mt-10 flex flex-col md:flex-row justify-center gap-5">
+        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+            <i class="fa-solid fa-bowl-rice fa-2x"></i>
+          </div>
+          <h4 class="font-bold mt-2 text-xl">Beras</h4>
+          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+        </div>
+        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+            <i class="fa-solid fa-money-bill fa-2x"></i>
+          </div>
+          <h4 class="font-bold mt-2 text-xl">Uang Tunai</h4>
+          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+        </div>
+        <div class="w-full md:w-1/3 px-3 py-2 rounded-lg text-center">
+          <div class="flex items-center text-sky-600 justify-center bg-gray-50 mx-auto w-16 h-16 rounded-full">
+            <i class="fa-solid fa-boxes-stacked fa-2x"></i>
+          </div>
+          <h4 class="font-bold mt-2 text-xl">Telur & Mie Instan</h4>
+          <p class="text-sm text-gray-600 mt-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates eveniet dignissimos reiciendis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section role="video" class="bg-gray-50 py-10">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-10">
+        <div class="flex-1">
+          <iframe class="w-full h-80 rounded-xl" src="https://www.youtube.com/embed/Fvu-D6OGSm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="flex-1 space-y-3">
+          <h3 class="font-bold text-3xl">Cara <span class="text-sky-600">Pengambilan BANSOS</span></h3>
+          <p class="text-gray-700 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iure consequuntur dicta minus eum, excepturi veniam et veritatis, aperiam eos doloremque maiores debitis obcaecati adipisci quod nobis tenetur. Nisi reiciendis esse nulla non! Praesentium dicta, iure magni, adipisci corrupti mollitia iste laborum quae natus reprehenderit voluptatem repellendus voluptatum sunt quos, temporibus at voluptatibus fugiat vitae eveniet vel totam aliquam neque! Ab, placeat dicta eos nostrum nihil ut tempore quasi eum dolor similique et reprehenderit delectus deleniti repellat numquam voluptatibus dolore? Nulla quo sint, ullam harum quibusdam quas, earum, alias culpa nostrum corrupti numquam autem reprehenderit ut eligendi! Omnis, porro non!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-3 bg-gray-800 text-white text-center">
+    <div class="container mx-auto px-4">
+      <p class="text-xs">© 2023 Materi kuliah Front End Development by <a href="https://instagram.com/kanglerian" class="font-bold">kanglerian</a> | Politeknik LP3I Kampus Tasikmalaya</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/indonesia.js"></script>
+  <script>
+
+  </script>
+  <script>
+    const navbarButton = () => {
+      $('#navbar').toggle();
+      $('#auth').toggle();
+    }
+  </script>
+  <script>
+    const getWilayah = async () => {
+      const ctx = document.getElementById('myChart');
+      let wilayah = [];
+      let jumlah = [];
+      await axios.get(`https://kanglerian.github.io/api-wilayah-indonesia/api/provinces.json`)
+        .then((response) => {
+          let data = response.data;
+          for (let i = 0; i < data.length; i++) {
+            wilayah.push(data[i].name);
+          }
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
+
+      for (let z = 0; z < wilayah.length; z++) {
+        await axios.get(`http://localhost:3000/jadwal`, {
+            params: {
+              provinces: wilayah[z]
+            }
+          })
+          .then((response) => {
+            jumlah.push(response.data.length);
+          })
+          .catch((error) => {
+            console.log(error.message);
+          })
+      }
+
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: wilayah,
+          datasets: [{
+            label: 'Berdasarkan Provinsi',
+            data: jumlah,
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    }
+    getWilayah();
+  </script>
+</body>
+
+</html>

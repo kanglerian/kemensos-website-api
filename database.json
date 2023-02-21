@@ -1,0 +1,56 @@
+{
+  "jadwal": [
+    {
+      "date": "2023-02-25",
+      "provinces": "JAWA BARAT",
+      "regencies": "KOTA TASIKMALAYA",
+      "districts": "BUNGURSARI",
+      "villages": "BUNGURSARI",
+      "id": 1
+    },
+    {
+      "date": "2023-02-24",
+      "provinces": "JAWA BARAT",
+      "regencies": "KOTA TASIKMALAYA",
+      "districts": "INDIHIANG",
+      "villages": "SIRNAGALIH",
+      "id": 2
+    },
+    {
+      "date": "2023-02-17",
+      "provinces": "RIAU",
+      "regencies": "KABUPATEN INDRAGIRI HILIR",
+      "districts": "KEMUNING",
+      "villages": "BATU AMPAR",
+      "id": 3
+    },
+    {
+      "date": "2023-02-23",
+      "provinces": "BALI",
+      "regencies": "KOTA DENPASAR",
+      "districts": "DENPASAR SELATAN",
+      "villages": "SESETAN",
+      "id": 4
+    }
+  ],
+  "peserta": [
+    {
+      "nik": "3278012602980005",
+      "name": "Lerian Febriana",
+      "provinces": "JAWA BARAT",
+      "regencies": "KOTA TASIKMALAYA",
+      "districts": "INDIHIANG",
+      "villages": "SUKAMAJUKALER",
+      "id": 1
+    },
+    {
+      "nik": "3278012602980006",
+      "name": "Asep Manarul Hidayah",
+      "provinces": "JAWA BARAT",
+      "regencies": "KOTA TASIKMALAYA",
+      "districts": "KAWALU",
+      "villages": "KARSAMENAK",
+      "id": 3
+    }
+  ]
+}
