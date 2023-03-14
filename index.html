@@ -20,35 +20,36 @@
     <div class="absolute z-[-1] top-[-500px] right-[-450px] md:top-[-300px] md:right-[-100px] h-[600px] w-[600px] rounded-full bg-[#12825B]"></div>
     <div class="absolute z-[-2] top-[-350px] right-[-450px] md:top-[80px] md:right-[-200px] h-[600px] w-[600px] rounded-full bg-[#FAC704]"></div>
 
-    <nav class="container mx-auto pt-5 px-4 py-2">
-      <div class="flex flex-wrap flex-col md:flex-row justify-start md:justify-between md:gap-10 text-sm">
-
-        <div class="flex flex-wrap items-center justify-between gap-10">
+    <nav class="container mx-auto px-4 py-5">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-5">
+        <div class="flex flex-wrap md:items-center justify-between text-sm md:gap-5">
           <a href="index.html"><img src="./images/logo.png" class="h-16" alt="Kemensos RI" /></a>
-          <button onclick="navbarButton()" type="button" class="md:hidden bg-gray-50 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 p-4 ml-3 text-sm text-gray-600 rounded-lg">
+          <button onclick="toggleNavbar()" type="button" class="md:hidden block bg-gray-50 focus:ring-2 focus:ring-gray-200 p-4 text-gray-600 rounded-lg">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar">
-            <ul class="flex flex-col md:flex-row bg-white md:bg-transparent md:shadow-none border border-gray-100 rounded-lg shadow-lg md:border-0 md:mt-0 p-3 md:space-x-8 hover:cursor-pointer">
-              <li>
-                <a href="index.html" class="block py-2 px-4 md:p-0 bg-blue-500 hover:bg-blue-600 text-white md:bg-transparent md:hover:text-cyan-700 md:hover:bg-transparent rounded md:text-cyan-600 font-bold">Beranda</a>
+          <div class="hidden mt-5 md:mt-0 md:block w-full md:w-auto" id="navbar">
+            <ul class="p-3 rounded-lg flex rounded-lg bg-white md:bg-transparent md:space-x-8 border md:border-none flex-col md:flex-row">
+              <li role="button" class="px-4 py-2 md:p-0 font-bold md:text-cyan-600 md:bg-transparent bg-sky-500 text-white rounded-lg">
+                <a href="index.html">Beranda</a>
               </li>
-              <li>
-                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Profil</a>
+              <li role="button" class="px-4 py-2 md:p-0">
+                <a onclick="alert('Belum ada fitur');" >Profil</a>
               </li>
-              <li>
-                <a href="jadwal.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Jadwal</a>
+              <li role="button" class="px-4 py-2 md:p-0">
+                <a href="jadwal.html">Jadwal</a>
               </li>
-              <li>
-                <a href="infografis.html" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Infografis</a>
+              <li role="button" class="px-4 py-2 md:p-0">
+                <a href="infografis.html">Infografis</a>
               </li>
-              <li>
-                <a onclick="alert('Belum ada fitur');" class="block py-2 px-4 md:p-0 hover:bg-gray-100 rounded md:hover:bg-transparent">Layanan Publik</a>
+              <li role="button" class="px-4 py-2 md:p-0">
+                <a onclick="alert('Belum ada fitur');">Layanan Publik</a>
               </li>
             </ul>
           </div>
         </div>
-        <a href="/pembagian.html" id="auth" class="hidden bg-white hover:bg-gray-50 md:block shadow-lg mt-2 py-5 px-7 md:px-5 rounded-lg text-sky-700"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
+        <div id="auth" class="hidden md:block bg-white rounded-lg border py-2 px-4 text-sm"> 
+          <a href="/pembagian.html" class="text-sky-700 py-2 px-4"><i class="fa-solid fa-right-from-bracket"></i> Login</a>
+        </div>
       </div>
     </nav>
 
@@ -236,7 +237,7 @@
         items: 1,
       });
     });
-    const navbarButton = () => {
+    const toggleNavbar = () => {
       $('#navbar').toggle();
       $('#auth').toggle();
     }
